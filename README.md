@@ -1,7 +1,9 @@
 Super Calculator
 ================
 Author: Chiel Robben
+
 License: MIT
+
 Website: http://pephers.org
 
 About
