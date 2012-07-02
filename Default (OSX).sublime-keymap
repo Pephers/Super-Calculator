@@ -1,0 +1,5 @@
+[
+    {
+        "keys": ["alt+c"], "command": "super_calculator"
+    }
+]
