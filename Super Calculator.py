@@ -11,10 +11,11 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
                     # calculate expression and replace it with the result
                     result = str(eval(expr))
                     self.view.replace(edit, region, result)
-                    self.view.sel().clear()
                     # move cursor after the result
-                    region_end = sublime.Region(region.end(), region.end())
-                    self.view.sel().add(region_end)
+                    result_region = self.view.sel()[0]
+                    result_region_end = sublime.Region(result_region.end(), result_region.end())
+                    self.view.sel().clear()
+                    self.view.sel().add(result_region_end)
                     sublime.status_message("Calculated result: " + expr + "=" + result)
                 else:
                     line_region = self.view.line(region)
