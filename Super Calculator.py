@@ -12,7 +12,7 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
                     result = str(eval(expr))
                     self.view.replace(edit, region, result)
                     # move cursor after the result
-                    result_region = self.view.sel()[0]
+                    result_region = self.view.sel()[-1]
                     result_region_end = sublime.Region(result_region.end(), result_region.end())
                     self.view.sel().clear()
                     self.view.sel().add(result_region_end)
