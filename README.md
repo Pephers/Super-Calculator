@@ -14,6 +14,8 @@ All you need to do is to press `Alt+C` and Super Calculator will select the math
 
 Installation
 ------------
+**With Package Control:** The easiest way to install Super Calculator is by using the [Package Control plugin](http://wbond.net/sublime_packages/package_control).
+
 **Without Git:** Download the latest source from [GitHub](https://github.com/Pephers/Super-Calculator) and copy the Super Calculator folder to your Sublime Text 2 "Packages" directory.
 
 **With Git:** Clone the repository in your Sublime Text 2 "Packages" directory:
