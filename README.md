@@ -14,7 +14,7 @@ All you need to do is to press `Alt+C` and Super Calculator will select the math
 
 Configuration
 -------------
-By default, Super Calculator rounds the result down to two decimals. However, you can specify the number of decimals you would like in the user settings file for Super Calculator. The settings files can be found in `Preferences -> Package Settings -> Super Calculator`.
+By default, Super Calculator rounds the result down to two decimals. However, you can specify the number of decimals you would like in the user settings file for Super Calculator. The settings files can be found by navigating to `Preferences -> Package Settings -> Super Calculator`.
 
 Installation
 ------------
