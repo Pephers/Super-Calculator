@@ -21,6 +21,10 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
                 # round result if decimals are found
                 if '.' in result:
                     result = round(float(result), self.settings.get("round_decimals"))
+                if str(result).endswith('.0'):
+                    result = str(result)
+                    dot_pos = result.find('.')
+                    result = result[0:dot_pos]
                 result = str(result)
                 self.view.replace(edit, region, result)
                 # move cursor after the result
