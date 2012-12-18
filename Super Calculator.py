@@ -1,4 +1,5 @@
 from __future__ import division
+from decimal import *
 import sublime
 import sublime_plugin
 import re
@@ -20,7 +21,7 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
                 result = str(eval(expr))
                 # round result if decimals are found
                 if '.' in result:
-                    result = round(float(result), self.settings.get("round_decimals"))
+                    result = round(Decimal(result), self.settings.get("round_decimals"))
                 result = str(result)
                 if result.endswith('.0'):
                     dot_pos = result.find('.')
