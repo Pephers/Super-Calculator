@@ -10,7 +10,7 @@ Super Calculator is a plugin for Sublime Text 2 which lets you do inline calcula
 
 Usage
 -----
-All you need to do is to press `Alt+C` and Super Calculator will select the mathematical expression closest cursor position so you can review what is going to be calculated. A second time `Alt+C` calculates the result and inserts it right away. Nice!
+All you need to do is to press `Alt+C` and Super Calculator will select the mathematical expression closest to the cursor position so you can review what is going to be calculated. A second time `Alt+C` calculates the result and inserts it right away. Nice!
 
 Configuration
 -------------
