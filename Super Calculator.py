@@ -1,5 +1,6 @@
 from __future__ import division
 
+import sys
 import re
 import math
 import random
@@ -28,6 +29,7 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
 
         def average(nums):
             return sum(nums) / len(nums)
+
         self.callables['avg'] = average
         self.callables['average'] = average
 
@@ -44,6 +46,7 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
         def password(length=10):
             pwdchrs = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
             return ''.join(random.choice(pwdchrs) for _ in range(length))
+
         password = Constant(password)
         self.callables['pwd'] = password
         self.callables['password'] = password
@@ -106,7 +109,10 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
         new_regions = (r for r in reversed(self.view.find_all(string))
             if r.begin() < region.end())
         try:
-            new_region = new_regions.next()
+            if sys.version_info < (3,0,0) :
+                new_region = new_regions.next()
+            else :
+                new_region = next(new_regions)
         except StopIteration:
             return None
         else:
