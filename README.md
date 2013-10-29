@@ -22,7 +22,7 @@ Installation
 
 **Without Git:** Download the latest source from [GitHub](https://github.com/Pephers/Super-Calculator) and copy the Super Calculator folder to your Sublime Text "Packages" directory.
 
-**With Git:** Clone the repository in your Sublime Text 2 "Packages" directory:
+**With Git:** Clone the repository in your Sublime Text "Packages" directory:
 
     git clone https://github.com/Pephers/Super-Calculator.git
 
