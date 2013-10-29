@@ -1,12 +1,12 @@
 Super Calculator
 ================
-Author: Chiel Robben
-License: MIT
-Website: http://pephers.org
+* Author: Chiel Robben
+* License: MIT
+* Website: http://pephers.org
 
 About
 -----
-Super Calculator is a plugin for Sublime Text 2 which lets you do inline calculations with a few keypresses. This is useful for example to subtract paddings from your widths in your CSS code.
+Super Calculator is a plugin for Sublime Text 2 and Sublime Text 3 which lets you do inline calculations with a few keypresses. This is useful for example to subtract paddings from your widths in your CSS code.
 
 Usage
 -----
@@ -20,7 +20,7 @@ Installation
 ------------
 **With Package Control:** The easiest way to install Super Calculator is by using the [Package Control plugin](http://wbond.net/sublime_packages/package_control).
 
-**Without Git:** Download the latest source from [GitHub](https://github.com/Pephers/Super-Calculator) and copy the Super Calculator folder to your Sublime Text 2 "Packages" directory.
+**Without Git:** Download the latest source from [GitHub](https://github.com/Pephers/Super-Calculator) and copy the Super Calculator folder to your Sublime Text "Packages" directory.
 
 **With Git:** Clone the repository in your Sublime Text 2 "Packages" directory:
 
@@ -31,12 +31,15 @@ The "Packages" directory can be found in the following locations:
 * OS X:
 
         ~/Library/Application Support/Sublime Text 2/Packages/
+        ~/Library/Application Support/Sublime Text 3/Packages/
 
 * Linux:
 
         ~/.config/sublime-text-2/Packages/
+        ~/.config/sublime-text-3/Packages/
 
 * Windows:
 
         %APPDATA%/Sublime Text 2/Packages/
+        %APPDATA%/Sublime Text 3/Packages/
 
