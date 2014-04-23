@@ -12,6 +12,8 @@ Usage
 -----
 All you need to do is to press `Alt+C` and Super Calculator will select the mathematical expression closest to the cursor position so you can review what is going to be calculated. A second time `Alt+C` calculates the result and inserts it right away. Nice!
 
+![](/images/usage.gif)
+
 Configuration
 -------------
 By default, Super Calculator rounds the result down to two decimals. However, you can specify the number of decimals you would like in the user settings file for Super Calculator. The settings files can be found by navigating to `Preferences -> Package Settings -> Super Calculator`.
