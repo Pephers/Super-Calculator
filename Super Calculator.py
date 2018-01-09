@@ -90,7 +90,7 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
                         if result == '':
                             result = '0'
                     if result != expr:
-                        self.view.replace(edit, region, result)
+                        self.view.replace(edit, region, result if not self.settings.get('keep_expressions') else '{0} {1} {2}'.format(expr, self.settings.get('keep_expressions_separator') or '=', result))
                         sublime.status_message("Calculated result: " + expr + "=" + result)
                     continue
             line_region = self.view.line(region)

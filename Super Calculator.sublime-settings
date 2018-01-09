@@ -1,4 +1,21 @@
 {
     // Round results to the specified decimals
-    "round_decimals": 2
+    "round_decimals": 2,
+
+    // Activate the Keep Expressions mode,
+    // keeping the expressions in the result
+    // Example:
+    // Default behavior:
+    //		expression: 5 + 5
+    //		result: 10
+    // Keep Expressions behavior:
+    // 		expression: 5 + 5
+    // 		result: 5 + 5 = 10
+    "keep_expressions": false,
+
+    // The chars that we gonna put to separate the
+    // expression from the result.
+    // Only works with the Keep Expressions mode,
+    // with "keep_expressions" set to true
+    "keep_expressions_separator": "="
 }
