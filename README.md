@@ -14,6 +14,19 @@ All you need to do is to press `Alt+C` and Super Calculator will select the math
 
 ![](/images/usage.gif)
 
+Keep Expressions Mode
+---------------------
+This mode allows to keep the expression after calculate the result.
+
+| Behavior         	| Expression 	| result     	|
+|------------------	|------------	|------------	|
+| Default          	| 5 + 5      	| 10         	|
+| Keep Expressions 	| 5 + 5      	| 5 + 5 = 10 	|
+
+![](/images/keep_expressions_mode.gif)
+
+**You can activate the Keep Expressions Mode setting "keep_expressions" to `true` in your sublime-settings file**
+
 Configuration
 -------------
 By default, Super Calculator rounds the result down to two decimals. However, you can specify the number of decimals you would like in the user settings file for Super Calculator. The settings files can be found by navigating to `Preferences -> Package Settings -> Super Calculator`.
