@@ -73,6 +73,7 @@ class SuperCalculatorCommand(sublime_plugin.TextCommand):
             # don't get invalidated
             exprs.append((region, self.view.substr(region)))
         for region, expr in exprs:
+            expr=expr.replace('\n',' ').replace('\r',' ') # replace newlines
             if expr:
                 # calculate expression and replace it with the result
                 try:
